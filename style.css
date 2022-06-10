@@ -1,0 +1,701 @@
+/*Import: Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200&family=Righteous&display=swap');
+
+
+/****************************************************************************************
+Allgemein
+****************************************************************************************/
+.page-wrapper {
+  	display: flex;
+  	flex-direction: column;
+}
+
+body {
+	margin-left: 5%;
+	margin-right: 5%;
+	background-color: #E8E6E0;
+}
+
+h1, h2, h3 {
+	font-family: 'Righteous', cursive;
+}
+
+h1 {
+	padding: 5%;
+	font-size: 500%;
+}
+
+h2, h3 {
+	padding: 5%;
+	font-size: 300%;
+}
+
+p {
+	line-height: 150%;
+	font-size: 150%;
+}
+
+p, footer, ul {
+	font-family: 'Montserrat Alternates', sans-serif;
+}
+
+a {
+	color: #A69F88;
+}
+
+
+/****************************************************************************************
+Intro - Header
+****************************************************************************************/
+.intro header {
+	background: url("img/building.jpg") no-repeat fixed left;
+	background-size: cover;
+}
+
+.intro header h1 {
+	background: #B13513;
+	color: #E8E6E0;
+}
+
+.intro header h2 {
+	padding-top: 20%;
+	color: #E8E6E0;
+}
+
+/****************************************************************************************
+Intro - Summary
+"A demonstration of what can be ..."
+****************************************************************************************/
+.intro .summary p:first-child {
+	float: left;
+	width: 42.5%;
+	height: 240px;
+	margin-right: 2.5%;
+	padding: 2.5%;
+	background: #3E3E3E url("img/dots-red.svg") no-repeat bottom right;
+	background-size: 80%;
+	color: #E8E6E0;
+}
+
+.intro .summary p:last-child {
+	float: right;
+	width: 42.5%;
+	height: 240px;
+	margin-left: 2.5%;
+	padding: 2.5%;
+	background: #3E3E3E url("img/arr-down-red.svg") no-repeat bottom;
+	background-size: cover;
+	color: #E8E6E0;
+}
+
+.intro .summary a:hover {
+	color: #E8E6E0;
+}
+
+@media (max-width: 70em) {
+	.intro .summary p:first-child {
+		width: 95%;
+		height: 5em;
+		margin-right: 0;
+		margin-top: -0.1em;
+		background-size: 50%;
+	}
+
+.intro .summary p:last-child {
+		width: 95%;
+		height: 2em;
+		margin-left: 0;
+		margin-top: -0.1em;
+		text-align: center;
+	}
+}
+
+@media (max-width: 53em) {
+	.intro .summary p:first-child {
+		height: auto;
+		background: #3E3E3E;
+	}
+
+	.intro .summary p:last-child {
+		height: auto;
+		background: #B13513;
+	}
+}
+
+/****************************************************************************************
+Intro - Preamble
+"The Road to Enlightenment"
+****************************************************************************************/
+.intro .preamble h3 {
+	margin-top: 440px;
+	padding-top: 20%;
+	background: #3E3E3E url("img/lights.jpg") no-repeat right fixed;
+	background-size: cover;
+	text-align: left;
+	color: #E8E6E0;
+}
+
+.intro .preamble p {
+	float: left;
+	width: 25%;
+	height: 550px;
+	padding: 2.5%;
+	color: #E8E6E0;
+}
+
+.intro .preamble p:nth-child(2) {
+	margin-right: 2.5%;
+	background: #3E3E3E url("img/broken.svg") no-repeat bottom;
+	background-size: 80%;
+}
+
+.intro .preamble p:nth-child(3) {
+	display: flex;
+	flex-flow: wrap;
+	justify-content:flex-start;
+	align-content:center;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+	background: #B13513 url("img/cloud.svg") no-repeat center;
+	background-size: 80%;
+}
+
+.intro .preamble p:nth-child(3) abbr:nth-child(2)::before {
+	content: " ";
+	white-space: pre;
+}
+
+.intro .preamble p:nth-child(4) {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	margin-left: 2.5%;
+	background: #3E3E3E url("img/target.svg") no-repeat top;
+	background-size: 80%;
+}
+
+@media (max-width: 70em) {
+	.intro .preamble h3 {
+		margin-top: 8em;
+	}
+	
+	.intro .preamble p {
+		float: none;
+		width: 95%;
+		height: 6em;
+		padding: 2.5%;
+		color: #E8E6E0;
+	}
+	
+	.intro .preamble p:nth-child(2) {
+		background-size: 30%;
+	}
+	
+	.intro .preamble p:nth-child(3) {
+		display: block;
+		margin-left: 0;
+		background-size: 30%;
+	}
+	
+	.intro .preamble p:nth-child(4) {
+		display: block;
+		margin-left: 0;
+		background-size: 30%;
+	}
+}
+
+@media (max-width: 53em) {
+	.intro .preamble h3 {
+		margin-top: 5em;
+		background: #E8E6E0;
+		text-align: center;
+		color: #3E3E3E;
+	}
+	
+	.intro .preamble p {
+		width: 95%;
+		height: auto;
+	}
+	
+	.intro .preamble p:nth-child(2) {
+		background: #3E3E3E;
+	}
+	
+	.intro .preamble p:nth-child(3) {
+		background: #B13513;
+	}
+	
+	.intro .preamble p:nth-child(4) {
+		background: #3E3E3E;
+	}
+}
+
+/****************************************************************************************
+Main - Explanation
+"So what is this about?"
+****************************************************************************************/
+.main-supporting .explanation h3 {
+	padding-top: 20%;
+	background: #3E3E3E url("img/tower.jpg") no-repeat top left fixed;
+	background-size: 80%;
+	text-align: right;
+	color: #E8E6E0;
+}
+
+.main-supporting .explanation p {
+	float: left;
+	width: 42.5%;
+	height: 20em;
+	padding: 2.5%;
+	color: #E8E6E0;
+}
+
+.main-supporting .explanation p:nth-child(2) {
+	margin-right: 2.5%;
+	background: #3E3E3E url("img/eye.svg") no-repeat bottom;
+	background-size: 80%;
+}
+
+.main-supporting .explanation p:nth-child(3) {
+	margin-left: 2.5%;
+	background: #3E3E3E url("img/brackets.svg") no-repeat top right;
+	background-size: 80%;
+}
+
+@media (max-width: 70em) {
+	.main-supporting .explanation p {
+		width: 95%;
+		height: 10em;
+	}
+
+	.main-supporting .explanation p:nth-child(2) {
+		margin-right: 0%;
+		margin-top: -0.1em;
+		background: #3E3E3E url("img/eye.svg") no-repeat bottom;
+		background-size: 40%;
+	}
+
+	.main-supporting .explanation p:nth-child(3) {
+		margin-left: 0%;
+		margin-top: -0.1em;
+		background: #3E3E3E url("img/brackets.svg") no-repeat top right;
+		background-size: 40%;
+	}
+}
+
+@media (max-width: 53em) {
+	.main-supporting .explanation h3 {
+		margin-top: 0;
+		background: #E8E6E0;
+		text-align: center;
+		color: #3E3E3E;
+	}
+	
+	.main-supporting .explanation p {
+		height: auto;
+	}
+	
+	.main-supporting .explanation p:nth-child(2) {
+		background: #B13513;
+	}
+
+	.main-supporting .explanation p:nth-child(3) {
+		background: #3E3E3E;
+	}
+}
+
+/****************************************************************************************
+Main - Participation
+****************************************************************************************/
+.main-supporting .participation h3 {
+	margin-top: 14.5em;
+	padding-top: 20%;
+	background: #3E3E3E url("img/statues.jpg") no-repeat right fixed;
+	background-size: cover;
+	color: #E8E6E0;
+}
+
+.main-supporting .participation p {
+	float: left;
+	width: 25%;
+	height: 730px;
+	padding: 2.5%;
+	color: #E8E6E0;
+}
+
+.main-supporting .participation p:nth-child(2), .participation p:nth-child(3) {
+	margin-right: 5%;
+}
+
+.participation p:nth-child(2) {
+	background: #3E3E3E url("img/focus.svg") no-repeat bottom right;
+	background-size: 80%;
+}
+
+.participation p:nth-child(3) {
+	background: #B13513 url("img/exclamation.svg") no-repeat right;
+}
+
+.participation p:nth-child(4) {
+	background: #3E3E3E url("img/letter.svg") no-repeat bottom center;
+	background-size: 80%;
+}
+
+@media (max-width: 70em) {
+	.main-supporting .participation p {
+		width: 95%;
+		height: 250px;
+	}
+	
+	.main-supporting .participation p:nth-child(2) {
+		margin-right: 0%;
+		background-size: 50%;
+	}
+	
+	.main-supporting .participation p:nth-child(3) {
+		margin-right: 0%;
+	}
+	
+	.main-supporting .participation p:nth-child(4) {
+		background-size: 50%;
+	}
+}
+
+@media (max-width: 53em) {
+	.main-supporting .participation h3 {
+		margin-top: 19.5em;
+		background: #E8E6E0;
+		text-align: center;
+		color: #3E3E3E;
+	}
+	
+	.main-supporting .participation p {
+		height: auto;
+		background: #3E3E3E;
+	}
+}
+
+
+/****************************************************************************************
+Main - Benefits
+****************************************************************************************/
+.main-supporting .benefits h3 {
+	margin-top: 940px;
+	padding-top: 20%;
+	background: #3E3E3E url("img/oldbuilding.jpg") no-repeat left fixed;
+	background-size: 80%;
+	text-align: right;
+	color: #E8E6E0;
+}
+
+.main-supporting .benefits p {
+	width: 70%;
+	padding-right: 15%;
+	padding-left: 15%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	background: url("img/moons.svg") no-repeat center;
+	text-align: center;
+}
+
+@media (max-width: 70em) {
+	.main-supporting .benefits h3 {
+		margin-top: 1100px;
+	}
+}
+
+@media (max-width: 53em) {
+	.main-supporting .benefits h3 {
+		padding-top: 2.5%;
+		background: #E8E6E0;
+		text-align: center;
+		color: #3E3E3E;
+	}
+	
+	.main-supporting .benefits p {
+		width: 95%;
+		padding: 0%;
+		background: #E8E6E0;
+	}
+}
+
+
+/****************************************************************************************
+Main - Requirements
+****************************************************************************************/
+.main-supporting .requirements h3 {
+	padding-top: 20%;
+	background: #3E3E3E url("img/rocks.jpg") no-repeat right fixed;
+	background-size: 80%;
+	color: #E8E6E0;
+}
+
+.main-supporting .requirements p {
+	padding: 2.5%;
+	background: #3E3E3E;
+	color: #E8E6E0;
+}
+
+.main-supporting .requirements p:nth-child(4), .requirements p:nth-child(5), .requirements p:nth-child(6) {
+	float: left;
+}
+	
+.main-supporting .requirements p:nth-child(4), .requirements p:nth-child(5) {
+	width: 43.5%;
+	height: 350px;
+}
+
+.main-supporting .requirements p:nth-child(4) {
+	margin-right: 3%;
+	background: #3E3E3E url("img/brush.svg") no-repeat bottom right;
+	background-size: 20%;
+}
+
+.main-supporting .requirements p:nth-child(5) {
+	background: #3E3E3E url("img/magnifyer.svg") no-repeat bottom right;
+	background-size: 60%;
+}
+
+.main-supporting .requirements p:last-child {
+	width: 95%;
+	height: auto;
+	padding: 2.5%;
+	background: #B13513 url("img/triangle-right.svg") no-repeat left;
+	text-align: center;
+	font-size: 130%;
+	color: #E8E6E0;
+}
+
+.main-supporting .requirements a:hover {
+	color: #E8E6E0;
+}
+
+@media (max-width: 70em) {
+	.main-supporting .requirements p:nth-child(4), .requirements p:nth-child(5) {
+		margin-right: 0;
+		width: 95%;
+		height: auto;
+	}
+	
+	.main-supporting .requirements p:nth-child(4) {
+		background-size: 8%;
+	}
+	
+	.main-supporting .requirements p:nth-child(5) {
+		background-size: 30%;
+	}
+}
+
+@media (max-width: 53em) {
+	.main-supporting .requirements h3 {
+		padding-top: 0%;
+		background: #E8E6E0;
+		text-align: center;
+		color: #3E3E3E;
+	}
+}
+
+
+/****************************************************************************************
+Main - Footer
+****************************************************************************************/
+.main-supporting footer {
+  	position: absolute;
+  	right: 7em;
+  	top: 0em;
+  	width: 5%;
+	height: 18em;
+	padding: 2.5%;
+	padding-top: 4.5%;
+	background-color: #3E3E3E;
+	line-height: 200%;
+	font-size: 150%;
+}
+
+.main-supporting footer a:hover {
+	color: #E8E6E0;
+}
+
+@media (max-width: 70em) {
+	.main-supporting footer {
+  		right: 0em;
+  		width: 100%;
+		height: 5em;
+		padding-top: 2.5%;
+		background: none;
+		line-height: 100%;
+		text-align: center;
+	}
+	
+	.main-supporting footer a {
+		color: #3E3E3E;
+	}
+	
+	.main-supporting footer a:hover {
+		color: #B13513;
+	}
+}
+
+
+/****************************************************************************************
+Sidebar - Design-Selection
+****************************************************************************************/
+.sidebar h3 {
+	padding: 0;
+	text-align: center;
+}
+
+.sidebar ul {
+	padding: 0;
+	list-style-type: none;
+	text-align: center;
+	color: #E8E6E0;
+}
+
+.sidebar .design-selection li {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	float: left;
+	width: 20%;
+	height: 175px;
+	margin: 2%;
+	padding: 1%;
+	background: #3E3E3E;
+}
+
+.sidebar .design-name, .designer-name {
+	line-height: 200%;
+	font-size: 150%;
+}
+
+.sidebar .design-selection li:nth-child(1), .design-selection li:nth-child(5) {
+	margin-left: 0;
+}
+
+.sidebar .design-selection li:nth-child(4), .design-selection li:nth-child(8) {
+	margin-right: 0;
+}
+
+.sidebar .design-selection a:hover {
+	color: #E8E6E0;
+}
+
+.sidebar .design-archives h3 {
+	font-size: 0;
+}
+
+.sidebar .design-archives li {
+	float: left;
+	margin-top: 2%;
+	padding: 2%;
+	background: #B13513;
+	font-size: 150%;
+}
+
+.sidebar .design-archives li:first-child {
+	margin-right: 4%;
+	width: 18%;
+}
+
+.sidebar .design-archives li:last-child {
+	width: 70%;
+}
+
+.sidebar .design-archives a {
+	color: #E8E6E0;
+}
+
+.sidebar .design-archives a:hover {
+	color: #A69F88;
+}
+
+.sidebar .zen-resources h3 {
+	margin-top: 700px;
+}
+
+.sidebar .zen-resources li {
+	font-size: 150%;
+	padding: 0.5%;
+}
+
+.sidebar .zen-resources li:last-child {
+	margin-right: 0;
+}
+
+.sidebar .zen-resources a {
+	color: #3E3E3E;
+}
+
+.sidebar .zen-resources a:hover {
+	color: #B13513;
+}
+
+@media (max-width: 70em) {
+	.sidebar .design-selection li {
+		width: 28.666%;
+	}
+	
+	.sidebar .design-selection li:nth-child(3), .design-selection li:nth-child(6) {
+		margin-right: 0%;
+	}
+	
+	.sidebar .design-selection li:nth-child(4), .design-selection li:nth-child(7) {
+		margin-right: 2%;
+		margin-left: 0%;
+	}
+	
+	.sidebar .design-selection li:nth-child(5) {
+		margin-left: 2%;
+	}
+	
+	.sidebar .design-selection li:nth-child(8) {
+		margin-right: 2%;
+	}
+	
+	.sidebar .design-archives li {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	
+	.sidebar .design-archives li:first-child {
+		height: 175px;
+		width: 28.666%;
+		margin-left: 2%;
+		margin-right: 0;
+		padding: 1%;
+	}
+	
+	.sidebar .design-archives li:last-child {
+		width: 96%;
+	}
+	
+	.sidebar .zen-resources h3 {
+		margin-top: 850px;
+	}
+}
+
+@media (max-width: 53em) {
+	.sidebar .design-selection li {
+		width: 98%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	
+	.sidebar .design-selection li:nth-child(5) {
+		margin-left: 0;
+	}
+	
+	.sidebar .design-archives li:first-child {
+		margin-left: 0;
+		margin-right: 4%;
+	}
+	
+	.sidebar .design-archives li:last-child {
+		width: 63%;
+		height: 175px;
+		margin-bottom: 60px;
+		padding: 1%;
+	}
+}
